@@ -3,7 +3,7 @@ from typing import TextIO
 
 from aip import AipOcr
 import webbrowser as web
-import o
+import os
 import time
 import datetime
 import win32api,win32con,win32gui
