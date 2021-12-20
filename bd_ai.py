@@ -13,11 +13,12 @@ if(time_m%10!=0):
 
     # opencv  模块  增加图片亮度
     img = cv2.imread(r"./a.jpg", cv2.IMREAD_COLOR)
-    open_cv.contrast_img(img, 1.3, 100)
-    cv2.imwrite("./b.jpg", img)
+    open_cv.contrast_img1(img, 1.3, 100)
     ocr.baiduOCR('b.jpg')
     open_txt.trip()
 else:
+    img = cv2.imread(r"./a.jpg", cv2.IMREAD_COLOR)
+    open_cv.contrast_img1(img, 1.3, 100)
     ocr_high.baiduOCR_high('b.jpg')
     open_txt.trip()
 

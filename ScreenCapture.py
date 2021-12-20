@@ -33,7 +33,7 @@ def ScreenCapture():
     # 设置裕量
     overmeasure = 90
     # img_ready = ImageGrab.grab((x1 , y1 , x2 , y2 ))
-    img_ready = ImageGrab.grab((x1 + 9.4 * overmeasure, y1+overmeasure, x2, y2 - 3*overmeasure))
+    img_ready = ImageGrab.grab((x1 + 9.4 * overmeasure, y1+overmeasure, x2, y2 - 3.8*overmeasure))
     # 截图
     #print(os.path.exists(path))
     if (os.path.exists(path) == False):
