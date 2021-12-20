@@ -25,10 +25,7 @@ def contrast_img1(img1, c, b):  # 亮度就是每个像素所有通道都加上b
     # 新建全零(黑色)图片数组:np.zeros(img1.shape, dtype=uint8)
     blank = np.zeros([rows, cols, channels], img1.dtype)
     dst = cv2.addWeighted(img1, c, blank, 1 - c, b)
-    cv2.imshow("contrast_img", dst)
     cv2.imwrite("./b.jpg",dst)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
 
 if __name__ == '__main__':
     img = cv2.imread(r"./a.jpg", cv2.IMREAD_COLOR)

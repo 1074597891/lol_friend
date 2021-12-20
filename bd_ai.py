@@ -19,12 +19,14 @@ if(time_m%10!=0):
     ocr.baiduOCR('b.jpg')
     open_txt.trip()
     os.remove("./1.txt")
+    os.system('taskkill /F /IM chrome.exe')
 else:
     img = cv2.imread(r"./a.jpg", cv2.IMREAD_COLOR)
     open_cv.contrast_img1(img, 1.3, 100)
     ocr_high.baiduOCR_high('b.jpg')
     open_txt.trip()
     os.remove("./2.txt")
+    os.system('taskkill /F /IM chrome.exe')
 
 
 
