@@ -33,15 +33,14 @@ def ScreenCapture():
     # 设置裕量
     overmeasure = 90
     # img_ready = ImageGrab.grab((x1 , y1 , x2 , y2 ))
-    img_ready = ImageGrab.grab((x1 + 9.4 * overmeasure, y1+overmeasure, x2, y2 - 3.8*overmeasure))
+    img_ready = ImageGrab.grab((x1 + 9.5 * overmeasure, y1+overmeasure, x2, y2 - 3.8*overmeasure))
     # 截图
-    #print(os.path.exists(path))
     if (os.path.exists(path) == False):
         os.mkdir(path)
         img_ready.save(path + '\\' + str(time_h) + "-" + str(time_m) + '.jpg')
     else:
         img_ready.save(path + '\\' + str(time_h) + "-" + str(time_m) + '.jpg')
-    shutil.copyfile(path + '\\' + str(time_h) + "-" + str(time_m) + '.jpg', "F:\\Desktop\\PycharmProjects\\pythonProject\\a.jpg")
+    shutil.copyfile(path + '\\' + str(time_h) + "-" + str(time_m) + '.jpg', "a.jpg")
 
 
 
