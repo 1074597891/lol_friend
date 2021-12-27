@@ -20,7 +20,7 @@ def baiduOCR_high(picfile):
     # 输出文本内容
     for text in message.get('words_result'):  # 识别的内容
         a = text.get('words')
-        with open('2.txt',"a+") as wfile:
+        with open('1.txt',"a+") as wfile:
             wfile.write(a)
             wfile.write('\n')
         print(a)
