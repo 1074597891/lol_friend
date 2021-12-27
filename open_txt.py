@@ -38,16 +38,14 @@ def trip():
                 (str(list_qm[nums1]) == "['骑着肖亮亮逛世界']") and str(list_qm[nums1 + 1]) == "[队列中']") == 1):
             web.open('https://api.day.app/QFBnuUtQaSuxZns6Lz88eS/乔梦上线了')
             tkinter.messagebox.showinfo('提示', '乔梦上线了')
-            time.sleep(5)
-            os.remove("./1.txt")
+            time.sleep(3)
             os.system('taskkill /F /IM chrome.exe')
         elif(((str(list_qm[nums1]) == "['骑着肖亮逛世界']") and str(list_qm[nums1 + 1]) == "['在线']") or (
                 (str(list_qm[nums1]) == "['骑着肖亮逛世界']") and str(list_qm[nums1 + 1]) == "['游戏中']") or (
                 (str(list_qm[nums1]) == "['骑着肖亮逛世界']") and str(list_qm[nums1 + 1]) == "[队列中']") == 1):
             web.open('https://api.day.app/QFBnuUtQaSuxZns6Lz88eS/乔梦上线了')
             tkinter.messagebox.showinfo('提示', '乔梦上线了')
-            time.sleep(5)
-            os.remove("./1.txt")
+            time.sleep(3)
             os.system('taskkill /F /IM chrome.exe')
 
 
