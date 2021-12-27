@@ -24,6 +24,7 @@ def ScreenCapture():
 
     # 其中窗口信息(x1, y1, x2, y2)，(x1, y1)是窗口左上角的坐标，(x2, y2)是窗口右下角的坐标。
     win32gui.SetForegroundWindow(handle)
+    win32gui.ShowWindow(handle, win32con.SW_RESTORE)
 
     # 设为高亮
     time.sleep(5)
@@ -35,6 +36,7 @@ def ScreenCapture():
     # img_ready = ImageGrab.grab((x1 , y1 , x2 , y2 ))
     img_ready = ImageGrab.grab((x1 + 9.5 * overmeasure, y1+overmeasure, x2, y2 - 3.8*overmeasure))
     # 截图
+    win32gui.ShowWindow(handle, win32con.SW_HIDE)
     if (os.path.exists(path) == False):
         os.mkdir(path)
         img_ready.save(path + '\\' + str(time_h) + "-" + str(time_m) + '.jpg')
