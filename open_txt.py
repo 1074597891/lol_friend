@@ -21,6 +21,7 @@ def trip():
             time.sleep(5)
             os.system('taskkill /F /IM chrome.exe')
 
+
         elif (((str(list_ypd[nums]) == "['挺哥无敌、']") and str(list_ypd[nums + 1]) == "['在线']") or (
             (str(list_ypd[nums]) == "['挺哥无敌、']") and str(list_ypd[nums + 1]) == "['游戏中']") or (
             (str(list_ypd[nums]) == "['挺哥无敌、']") and str(list_ypd[nums + 1]) == "[队列中']") == 1):
@@ -28,6 +29,7 @@ def trip():
             tkinter.messagebox.showinfo('提示', '姚培栋上线了')
             time.sleep(5)
             os.system('taskkill /F /IM chrome.exe')
+
     f_qm = open("1.txt", "r")
     for lines1 in f_qm.readlines():
         names_qm = lines1[:-1].split('\n')
@@ -47,7 +49,10 @@ def trip():
             tkinter.messagebox.showinfo('提示', '乔梦上线了')
             time.sleep(3)
             os.system('taskkill /F /IM chrome.exe')
-
+    f_ypd.close()
+    f_qm.close()
+    time.sleep(5)
+    os.remove(r"F:\\Desktop\\python_project\\lol\\1.txt")
 
 if __name__ == '__main__':
     trip()
