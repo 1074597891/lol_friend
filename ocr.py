@@ -5,9 +5,9 @@ def baiduOCR(picfile):
 
 
     """ 你的 APPID AK SK """
-    APP_ID = '23772553'
-    API_KEY = 'U11QDtKOPFS7LalUp3ttcDYz'
-    SECRET_KEY = 'psHywZdO2ZYlMPHakqxU6iznONej0wrP'
+    APP_ID = '25478049'
+    API_KEY = '5DP0MmlLRpzdN7wOMWetALgW'
+    SECRET_KEY = 'BkR5Ii8c5AxOOqndtjpssqGVGwBzsDVG'
 
 
     client = AipOcr(APP_ID, API_KEY, SECRET_KEY)

@@ -11,6 +11,7 @@ def main():
     while 1:
         if(os.path.exists("./log_in")=="True"):
             os.removedirs("./log_in")
+            recover()
             break
         ScreenCapture.ScreenCapture()
 

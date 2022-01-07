@@ -20,12 +20,13 @@ def ScreenCapture():
             return win32gui.GetWindowRect(handle), handle
 
     (x1, y1, x2, y2), handle = get_window_pos('league of legends')
-    win32gui.ShowWindow(handle, win32con.SW_RESTORE)
+    
 
     # 其中窗口信息(x1, y1, x2, y2)，(x1, y1)是窗口左上角的坐标，(x2, y2)是窗口右下角的坐标。
     if (win32gui.IsIconic(handle)) :
         win32gui.ShowWindow(handle, win32con.SW_RESTORE)
     else:
+        win32gui.ShowWindow(handle, win32con.SW_RESTORE)
         win32gui.SetForegroundWindow(handle)
 
 
