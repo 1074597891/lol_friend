@@ -1,5 +1,4 @@
 import os
-import time
 import datetime
 import shutil
 import win32api,win32con,win32gui
@@ -32,14 +31,14 @@ def ScreenCapture():
 
 
     # 设为高亮
-    time.sleep(5)
+
     from PIL import Image, ImageGrab
     time_h = (datetime.datetime.now().hour)
     time_m = (datetime.datetime.now().minute)
     # 设置裕量
     overmeasure = 90
     # img_ready = ImageGrab.grab((x1 , y1 , x2 , y2 ))
-    img_ready = ImageGrab.grab((x1 + 9.5 * overmeasure, y1+overmeasure, x2, y2 - 3.8*overmeasure))
+    img_ready = ImageGrab.grab((x1 + 9.4 * overmeasure, y1+overmeasure, x2, y2 - 3.8*overmeasure))
     # 截图
 
     if (os.path.exists(path) == False):
