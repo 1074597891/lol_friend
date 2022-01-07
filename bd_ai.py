@@ -6,6 +6,8 @@ import time
 
 import cv2
 import ocr,ocr_high,ScreenCapture,open_txt,open_cv
+from recover import recover
+
 
 def main():
     while 1:
