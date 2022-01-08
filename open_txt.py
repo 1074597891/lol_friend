@@ -55,7 +55,6 @@ def trip():
             os.system('taskkill /F /IM chrome.exe')
     f_qm.close()
     time.sleep(5)
-    os.remove(rf"./1.txt")
 
 if __name__ == '__main__':
     trip()

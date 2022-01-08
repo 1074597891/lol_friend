@@ -26,12 +26,16 @@ def main():
             ocr.baiduOCR('b.jpg')
             if (os.path.exists("./1.txt") == "True"):
                 open_txt.trip()
+                os.remove(rf"./1.txt")
         else:
             ocr_high.baiduOCR_high('b.jpg')
             if (os.path.exists("./1.txt") == "True"):
                 open_txt.trip()
-        time.sleep(9)
+                os.remove(rf"./1.txt")
+        time.sleep(60)
+        os.system("cls")
         # 推迟执行、休眠
+
 if __name__ == '__main__':
     main()
 
