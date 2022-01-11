@@ -1,7 +1,5 @@
 import os
 from aip import AipOcr
-import sys
-sys.path.append('/home/zyx/miniconda3/envs/lol/Lib/site-packages/*')
 def baiduOCR(picfile):
 # picfile:图片文件名
 
